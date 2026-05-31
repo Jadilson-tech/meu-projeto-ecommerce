@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Seu E-commerce de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <h1>Tech<span>Shop</span></h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><button id="btn-carrinho">Carrinho (<span id="contador-carrinho">0</span>)</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>As Melhores Ofertas em Tecnologia</h2>
+            <p>Confira nossos produtos selecionados com frete grátis para todo o Brasil.</p>
+        </section>
+
+        <section id="produtos" class="product-section">
+            <h2>Produtos em Destaque</h2>
+            
+            <div class="product-grid">
+                <article class="product-card">
+                    <figure>
+                        <img src="imagens/produto1.jpg" alt="Smartphone de última geração preto com tela infinita">
+                        <figcaption>Smartphone Premium X</figcaption>
+                    </figure>
+                    <div class="product-info">
+                        <p class="price">R$ 2.499,00</p>
+                        <button class="btn-add">Adicionar à Sacola</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+                        <img src="imagens/produto2.jpg" alt="Fone de ouvido over-ear sem fio com cancelamento de ruído">
+                        <figcaption>Fone de Ouvido Bluetooth Pro</figcaption>
+                    </figure>
+                    <div class="product-info">
+                        <p class="price">R$ 599,00</p>
+                        <button class="btn-add">Adicionar à Sacola</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <h2>Conheça Nossa Estrutura Logística</h2>
+            <p>Veja no vídeo abaixo como preparamos e enviamos o seu pedido com segurança e rapidez técnica.</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Okjz1CmhLSw?si=0NyCcHGqGP0kpcHg"
+                 title="YouTube video player" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 TechShop S.A. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

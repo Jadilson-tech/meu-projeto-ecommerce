@@ -1,0 +1,209 @@
+/* Reset de Estilos Básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+.main-header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.logo h1 span {
+    color: #3498db;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.main-nav ul li a:hover {
+    color: #3498db;
+}
+
+#btn-carrinho {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições combinadas */
+}
+
+#btn-carrinho:hover {
+    background-color: #27ae60;
+    transform: scale(1.05); /* Efeito de leve crescimento */
+}
+
+/* Seção Hero / Banner */
+.hero {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Grid de Produtos */
+.product-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.product-section h2, .about-section h2 {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card do Produto com Efeitos de Transição */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o card */
+}
+
+/* Efeito de flutuar e sombra ao passar o mouse no card */
+.product-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease; /* Transição para a imagem interna */
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.product-card:hover img {
+    transform: scale(1.03);
+}
+
+.product-card figcaption {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+    color: #2c3e50;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-add {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #2980b9;
+}
+
+/* Seção do Vídeo */
+.about-section {
+    background-color: #ffffff;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    color: #666;
+}
+
+/* Vídeo Responsivo */
+.video-container {
+    max-width: 560px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Rodapé */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
