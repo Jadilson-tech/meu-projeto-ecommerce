@@ -1,4 +1,5 @@
 # TechShop - E-commerce Front-End Semântico 
+Acesso do site [clique aqui](https://jadilson-tech.github.io/meu-projeto-ecommerce/)
 
 Este é um projeto de uma plataforma de e-commerce moderna, desenvolvida para fins acadêmicos. O objetivo principal foi aplicar os conceitos de **HTML5 Semântico**, estilização avançada com **Transições CSS** e manipulação dinâmica do DOM através de **JavaScript Puro (Vanilla JS)**, além de integrar recursos de mídia externa de forma responsiva.
 
